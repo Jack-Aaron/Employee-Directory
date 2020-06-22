@@ -17,5 +17,7 @@ View a company's entire employee directory at once using React to have quick acc
 * Heroku
 * React
 
+### Future Improvements
+
 ### Links
 * [Application]()
