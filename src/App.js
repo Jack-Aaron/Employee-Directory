@@ -1,18 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Jumbotron from './components/jumbotron';
+import Header from './components/header';
 import { Container, Row, Col, Table } from 'reactstrap';
+import EmployeeTable from './components/table';
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <Container>
         <Row>
           <Col>
-            <Jumbotron>
-              
-            </Jumbotron>
+            <EmployeeTable />
           </Col>
         </Row>
       </Container>
