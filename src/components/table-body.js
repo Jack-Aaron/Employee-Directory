@@ -1,13 +1,18 @@
 import React from 'react';
 
-const TableBody = (props) => {
+function TableBody(props) {
     return (
         <tbody>
             {/* users.map(
             return ( */}
-            <tr> props go here </tr>
-          )
-         )
+            <tr>
+                {/* <th scope="row"></th> */}
+                <td><img src={props.image} alt='' /></td>
+                <td>{props.name}</td>
+                <td>{props.phoneNumber}</td>
+                <td>{props.email}</td>
+                <td>{props.dob}</td>
+            </tr>
         </tbody>
     );
 }
