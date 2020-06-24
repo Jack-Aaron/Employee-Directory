@@ -6,7 +6,8 @@ import SortBtn from './sort-button';
 
 class EmployeeTable extends React.Component {
     state = {
-        results: []
+        results: [],
+        currentSort: 'up'
     };
 
     // When the component mounts, load the next employee to be displayed
@@ -19,8 +20,6 @@ class EmployeeTable extends React.Component {
             ).catch(err => console.log(err));
     };
 
-
-
     render() {
         return (
             <Table>
@@ -30,11 +29,20 @@ class EmployeeTable extends React.Component {
                         <th>
                             Name
                         <SortBtn onClick={() => {
-                                this.setState({
+                                if (this.state.currentSort === 'up') {
+                                    this.setState({
+                                        results: this.state.results.sort(
+                                            (a, b) => a.name.last.localeCompare(b.name.last)),
+                                            currentSort: 'down'
+                                    })
+                                }
+                                else {this.setState({
                                     results: this.state.results.sort(
-                                        (a, b) => a.name.first.localeCompare(b.name.first))
-                                })
-                            }} />
+                                        (a, b) => b.name.last.localeCompare(a.name.last)),
+                                        currentSort: 'up'
+                                })}
+                            }
+                            } />
                         </th>
                         <th>Phone Number</th>
                         <th>Email</th>
