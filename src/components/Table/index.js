@@ -1,8 +1,8 @@
 import React from 'react';
 import API from '../../utils/API';
 import { Table } from 'reactstrap';
-import TableBody from '../Table-Body/table-body';
-import SortBtn from '../SortBtn/sort-button';
+import TableBody from '../Table-Body';
+import SortBtn from '../SortBtn';
 
 class EmployeeTable extends React.Component {
     state = {
