@@ -1,4 +1,5 @@
 import React from 'react';
+import "./App.css";
 
 function TableBody(props) {
     return (
@@ -7,7 +8,7 @@ function TableBody(props) {
                 return (
                     <tr>
                         {/* <th scope="row"></th> */}
-                        <td><img src={result.picture.thumbnail} alt='' /></td>
+                        <td><img src={result.picture.thumbnail} alt='' style={{borderRadius:'15px'}}/></td>
                         <td>{result.name.first + ' ' + result.name.last}</td>
                         <td>{result.phone}</td>
                         <td>{result.email}</td>
