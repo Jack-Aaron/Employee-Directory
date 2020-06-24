@@ -3,18 +3,22 @@ import React from 'react';
 function TableBody(props) {
     return (
         <tbody>
-            {/* users.map(
-            return ( */}
-            <tr>
-                {/* <th scope="row"></th> */}
-                <td><img src={props.image} alt='' /></td>
-                <td>{props.name}</td>
-                <td>{props.phoneNumber}</td>
-                <td>{props.email}</td>
-                <td>{props.dob}</td>
-            </tr>
+            {props.results.map(result => {
+                return (
+                    <tr>
+                        {/* <th scope="row"></th> */}
+                        <td><img src={result.picture.thumbnail} alt='' /></td>
+                        <td>{result.name.first + ' ' + result.name.last}</td>
+                        <td>{result.phone}</td>
+                        <td>{result.email}</td>
+                        <td>{result.dob.date}</td>
+                    </tr>
+                )
+            })
+            }
         </tbody>
-    );
+    )
 }
+
 
 export default TableBody;
