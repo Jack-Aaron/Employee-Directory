@@ -5,7 +5,6 @@ import { Table } from 'reactstrap';
 import TableBody from '../Table-Body';
 import SortBtn from '../SortBtn';
 
-
 function EmployeeTable() {
 
     const [employees, setEmployees] = useState({
@@ -22,8 +21,7 @@ function EmployeeTable() {
                 setEmployees({
                     results: res.data.results,
                     filteredResults: res.data.results
-                })
-            ).catch(err => console.log(err));
+                })).catch(err => console.log(err));
     };
 
     const searchFilter = (event) => {
@@ -81,8 +79,7 @@ function EmployeeTable() {
                 />
             </Table>
         </div>
-    );
-}
-
+    )
+};
 
 export default EmployeeTable;
