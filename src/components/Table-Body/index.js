@@ -10,7 +10,7 @@ function TableBody(props) {
                         {/* <th scope="row"></th> */}
                         <td><img src={result.picture.thumbnail} alt='' style={{ borderRadius: '15px' }} /></td>
                         <td>{result.name.first + ' ' + result.name.last}</td>
-                        <td>{result.phone}</td>
+                        <td><a href={'tel:' + result.phone}>{result.phone}</a></td>
                         <td><a href={'mailto:' + result.email}>{result.email}</a></td>
                         <td>{moment(result.dob.date).format('MM/DD/YYYY')}</td>
                     </tr>
