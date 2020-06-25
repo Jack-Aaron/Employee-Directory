@@ -10,7 +10,7 @@ function TableBody(props) {
                         <td><img src={result.picture.thumbnail} alt='' style={{ borderRadius: '15px' }} /></td>
                         <td>{result.name.first + ' ' + result.name.last}</td>
                         <td>{result.phone}</td>
-                        <td>{result.email}</td>
+                        <td><a href={'mailto:' + result.email}>{result.email}</a></td>
                         <td>{result.dob.date}</td>
                     </tr>
                 )
