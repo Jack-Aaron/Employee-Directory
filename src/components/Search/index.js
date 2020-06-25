@@ -1,21 +1,16 @@
 import React from 'react';
-import { FormGroup, Label, Input } from 'reactstrap';
-
 const Search = (props) => {
     return (
-        <FormGroup>
-            <Label for="exampleSearch">Search</Label>
-            <Input
-                type="search"
-                name="search"
-                id="exampleSearch"
-                placeholder="John Smith"
-                style={{
-                    width: '20%',
-                    margin: '0 auto'
-                }}
-            />
-        </FormGroup>
+        <div style={{
+            width: '20%',
+            margin: '0 auto',
+            marginBottom: '1em',
+            marginTop: '-1em'
+        }}>Search
+            <div className="input-group input-group-md" >
+                <input className="form-control" type="text" {...props} />
+            </div>
+        </div>
     );
 };
 

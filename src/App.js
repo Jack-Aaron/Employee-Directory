@@ -6,6 +6,9 @@ import { Container, Row, Col } from 'reactstrap';
 import EmployeeTable from './components/Table';
 
 function App() {
+
+  // const [personSearch, setPersonSearch] = useState('')
+
   return (
     <div className="App">
       <Header />
