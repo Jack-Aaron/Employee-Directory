@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 
 function TableBody(props) {
     return (
@@ -11,7 +12,7 @@ function TableBody(props) {
                         <td>{result.name.first + ' ' + result.name.last}</td>
                         <td>{result.phone}</td>
                         <td><a href={'mailto:' + result.email}>{result.email}</a></td>
-                        <td>{result.dob.date}</td>
+                        <td>{moment(result.dob.date).format('MM/DD/YYYY')}</td>
                     </tr>
                 )
             }
