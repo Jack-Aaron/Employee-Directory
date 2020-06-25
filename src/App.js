@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import { Container, Row, Col } from 'reactstrap';
 import EmployeeTable from './components/Table';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           </Col>
         </Row>
       </Container>
+      <Footer />
     </div>
   );
 }

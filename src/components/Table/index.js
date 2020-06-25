@@ -59,20 +59,19 @@ function EmployeeTable() {
         <div>
             <Search
                 onChange={searchFilter}
-                placeholder='John Smith'
+                placeholder='Jane Wang'
             />
-            <Table>
-                <thead>
-                    <tr>
-                        <th>Image</th>
-                        <th>
-                            Name
+            <Table style={{
+            }}>
+                <thead style={{ backgroundColor: '#CAD2C5' }}>
+                    <th>Image</th>
+                    <th>
+                        Name
                         <SortBtn onClick={sortFilter} />
-                        </th>
-                        <th>Phone Number</th>
-                        <th>Email</th>
-                        <th>DOB</th>
-                    </tr>
+                    </th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>DOB</th>
                 </thead>
                 <TableBody
                     results={employees.filteredResults}
