@@ -1,10 +1,9 @@
 import React from 'react';
-import './style.css';
 
 const Footer = (props) => {
   return (
     <div>
-     Jonathan Alpart AKA Jack Aaron 2020
+     <a href='https://github.com/Jack-Aaron' rel='noopener noreferrer' target='_blank'>Jonathan Alpart AKA Jack Aaron 2020</a>
     </div>
   );
 };

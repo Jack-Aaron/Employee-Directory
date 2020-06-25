@@ -3,8 +3,14 @@ import React from "react";
 function SortBtn(props) {
 
     return (
-        <span className="sort-btn" {...props}
-            role="img" tabIndex="0" aria-label='sort-up icon'>
+        <span
+            {...props}
+            className="sort-btn"
+            role="img"
+            tabIndex="0"
+            aria-label='sort-up icon'
+            style={{ color: '#394C56' }}
+        >
             &nbsp;&#8645;
         </span>
     );

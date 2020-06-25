@@ -5,12 +5,13 @@ import './style.css';
 function TableBody(props) {
     return (
         <tbody style={{
-            fontSize: 'x-large'
+            fontSize: 'large'
         }}>
             {props.results.map(result => {
                 return (
                     <tr className='tr-group' style={{
-                        border: 'solid 5px #52796F'
+                        border: 'solid 5px #52796F',
+                        lineHeight:'4'
                     }}>
                         {/* <th scope="row"></th> */}
                         <td><img src={result.picture.thumbnail}
