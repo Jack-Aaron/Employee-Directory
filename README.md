@@ -5,6 +5,12 @@ View a company's entire employee directory at once using React to have quick acc
 
 ![Employee Directory demo gif](demo.gif)
 
+### Development Process
+
+Adding the Sorting mechanism was an interesting experiment in blending JavaScript logic with how React operates with JSX. It also required some thinking and tooling around with how to best represent a "sorting" affordance to a user.
+
+Once I had the basic View set up using Reactstrap, I was able to further customize the styles of the model data to my liking.
+
 ### Technologies Used
 * HTML/CSS
 * [Reactstrap](https://reactstrap.github.io/)
